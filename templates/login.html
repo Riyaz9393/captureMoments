@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Account Login</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url("static/images/login-bg.jpg") no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-container {
+      background: white;
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      width: 350px;
+      text-align: center;
+    }
+
+    .login-container h2 {
+      margin-bottom: 20px;
+      color: #3b3bbf;
+    }
+
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      background-color: #e8f0fe;
+      font-size: 14px;
+    }
+
+    .login-container .options {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+      margin: 10px 0;
+    }
+
+    .login-container .options a {
+      text-decoration: none;
+      color: #3b3bbf;
+    }
+
+    .login-container button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 6px;
+      background-color: #3b3bbf;
+      color: white;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    .login-container .reset-btn {
+      background-color: #6c63ff;
+    }
+
+    .login-container .footer {
+      margin-top: 15px;
+      font-size: 13px;
+    }
+
+    .login-container .footer a {
+      text-decoration: none;
+      color: #3b3bbf;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <h2>Account Login</h2>
+    <form method="POST">
+      <input type="text" name="username" placeholder="Username" required>
+      <input type="password" name="password" placeholder="Password" required>
+
+      <div class="options">
+        <label><input type="checkbox"> Remember Me</label>
+        <a href="#">Forgot Password?</a>
+      </div>
+
+      <button type="submit">Login</button>
+      <button type="reset" class="reset-btn">Reset</button>
+
+      <div class="footer">
+        New user? <a>Create an account</a>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
